@@ -35,7 +35,7 @@
 cd backend
 npm install
 npm run dev
-
+```
 ### 3. Запуск frontend
 - Откройте файл frontend/index.html в браузере
 - Или запустите через Live Server в VS Code
