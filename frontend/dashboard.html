@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Exchange - Загрузка файлов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>File Exchange Service</h1>
+            <button id="logoutBtn">Выйти</button>
+        </header>
+
+        <div class="upload-section">
+            <h2>Загрузить файл</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <input type="file" id="fileInput" required>
+                </div>
+                <button type="submit">Загрузить</button>
+            </form>
+            
+            <div id="progress" class="progress" style="display: none;">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span id="progressText">0%</span>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <h2>Ваши файлы</h2>
+            <div id="linksList"></div>
+        </div>
+
+        <div class="stats-section">
+            <h2>Статистика</h2>
+            <button id="refreshStats">Обновить статистику</button>
+            <div id="statsList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
