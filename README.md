@@ -34,6 +34,7 @@
 ```bash
 cd backend
 npm install
+npm install express cors multer
 npm install -D typescript ts-node @types/express @types/cors @types/multer
 npm install uuid
 npm run dev
